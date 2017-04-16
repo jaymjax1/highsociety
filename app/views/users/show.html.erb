@@ -1,0 +1,54 @@
+<% provide(:title, "My Profile") %>
+<div class="container">
+  <div class="fb-profile">
+    <img align="left" class="fb-image-lg" src="http://placehold.it/2050x350" alt="Profile image example"/>
+    <img align="left" class="fb-image-profile thumbnail" src="http://placehold.it/550x550" alt="Profile image example"/>
+    <div class="fb-profile-text">
+      <h1><%= @user.first_name + " " + @user.last_name %> 
+        <span class="text-muted medium-muted"><%=@user.city+","+@user.state %> <%=link_to 'Edit', edit_user_path(@user)%> 
+        </span>
+      </h1>
+    </div>
+  </div>
+</div> <!-- /container -->  
+<br>
+<br>
+<div class= "container col-xs-6 col-xs-offset-3">
+  <div class="row">
+    <div class="panel panel-default ">
+      <div class="panel-heading">
+        <h1 class="panel-title">Bio</h1>
+      </div>
+      <div class="panel-body">
+        <%= @user.about_me %>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Right side -->
+<div class= "container col-xs-6 col-xs-offset-3">
+  <div class = "row"> 
+    <div class="panel panel-default col-xs-10 col-xs-offset-1">
+      <h2 class=""> Recent Activity </h2>
+      <hr>
+      <div class="panel-body">
+        <!-- activity blocks go here -->
+        <% @user.posts.each do |post| %>
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h3 class="panel-title"> <b> <%= post.title %> </b> <span class ="small-muted"> <i> posted in 
+              <%= link_to "#{post.group.name}", group_path(post.group) %> @ <%= post.created_at %> </i></span></h3>
+            </div>
+            <div class="panel-body">
+              <%= post.description %>
+            </div>
+          </div>
+
+          <br>
+          <% end %>
+          <!-- activity blocks end here --> 
+        </div>
+      </div>
+    </div> 
+  </div>

@@ -1,0 +1,215 @@
+html, body {
+}
+
+
+.blue-green-gradient{
+	background: #95d600;
+	background: -webkit-linear-gradient(to left, #95d600, #00b3e3);
+	background: linear-gradient(to left, #95d600, #00b3e3);
+}
+
+.blue-blue-gradient{
+	background: #95d600;
+	background: -webkit-linear-gradient(to left, #95d600, #00b3e3);
+	background: linear-gradient(to left, #95d600, #00b3e3);
+}
+
+.blue-background{
+	background-color: #AEE1f3;
+}
+
+.grey-background{
+	background-color: #f5f8fa;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  line-height: 60px; /* Vertically center the text there */
+  background-color: transparent;
+}
+
+/* Padding --------------------------------------------*/
+.no-padding{
+	padding: 0px !important;
+}
+
+.small-padding{
+	padding: 6px !important;
+}
+.more-padding{
+	padding-top: 100px;
+}
+
+.alot-more-padding{
+	padding-top: 150px;
+}
+
+.formpadding{
+	padding: 30px;
+}
+
+.top-padding{
+	padding-top: 10px !important;
+}
+/* End of padding -------------------------------------*/
+
+
+.primary{
+	color:#FF8300;
+}
+
+.secondary{
+	color:#95d600; 
+}
+
+.secondarycool{
+	color:#daefa9;
+}
+
+.onboardinglarge{
+	font-size: 70px;
+}
+
+.onboardingmedium{
+	font-size: 40px;
+}
+
+
+.tiny{
+	width:75px;
+	height:75px;
+}
+
+.post{
+	width:43px;
+	height:43px;
+}
+
+.transparent{
+	background-color: transparent !important;
+	border-bottom:  1px solid #eeeeee !important;
+}
+
+.full{
+	height: 100%;
+	width: 100%;
+
+}
+
+.transparent{
+	background-color: rgba(0,0,0,0.1);
+}
+
+/* Text styles -----------------------------------------*/
+.text-small{
+	font-size: 12px;
+}
+
+.form-text{
+	color: white;
+	font-size: 20px;
+}
+.small-muted{
+	font-size: 10px;
+}
+
+.medium-muted{
+	font-size: 18px;
+}
+
+.larger-text{
+	font-size: 25px;
+}
+
+.bio-text{
+	font-size: 19px;
+}
+
+/* Box-Shadow ---------------------------------------------*/
+
+.box-shadow{
+	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
+}
+
+/* Border-Radius--------------------------------------------*/
+
+.sharp-corners{
+  border-radius: 0 !important;
+}
+
+
+/* Element Spacing ----------------------------------------*/
+
+.close-together{
+	margin:5px!important;
+}
+
+/*------------*/
+
+.color-border{
+	border-color: #FF8300;
+}
+
+.nav-tabs{
+	color:black;
+	border-bottom: transparent;
+}
+
+.nav-tabs>li>a:hover{
+	background-color:rgba(0,0,0,0.1);
+	border-color:transparent; 
+	border-bottom: transparent;
+	color: white;
+}
+
+a{
+	color:white;
+}
+
+textarea{
+	resize: none;
+}
+
+.navy-background{
+	background-color: #c0d6df !important;
+}
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+.fb-profile img.fb-image-lg{
+    z-index: 0;
+    width: 100%;  
+    margin-bottom: 10px;
+}
+
+.fb-image-profile
+{
+    margin: -90px 10px 0px 50px;
+    z-index: 9;
+    width: 10%; 
+}
+
+@media (max-width:768px)
+{
+    
+.fb-profile-text>h1{
+    font-weight: 700;
+    font-size:16px;
+}
+
+.fb-image-profile
+{
+    margin: -45px 10px 0px 25px;
+    z-index: 9;
+    width: 20%; 
+}
+}
+
+

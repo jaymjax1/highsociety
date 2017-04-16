@@ -1,0 +1,25 @@
+<h2>Change your username</h2>
+
+<%= form_for(resource, as: resource_name, url: username_path(resource_name), html: { method: :put }) do |f| %>
+  <%= devise_error_messages! %>
+  <%= f.hidden_field :reset_username_token %>
+
+  <div class="field">
+    <%= f.label :username, "New username" %><br />
+    <% if @minimum_username_length %>
+      <em>(<%= @minimum_username_length %> characters minimum)</em><br />
+    <% end %>
+    <%= f.password_field :username, autofocus: true, autocomplete: "off" %>
+  </div>
+
+  <div class="field">
+    <%= f.label :username_confirmation, "Confirm new password" %><br />
+    <%= f.password_field :username_confirmation, autocomplete: "off" %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit "Change my username" %>
+  </div>
+<% end %>
+
+<%= render "devise/shared/links" %>
